@@ -1,0 +1,9 @@
+<div class="card mb-4 p-4">
+  <h5 class="tex-title">Your question:</h5>
+  <input type="text" class="mb-4 p-2 border border-info rounded shadow" [(ngModel)]="newQuestion" placeholder="Enter question text..." />
+  <h5>Your answer:</h5>
+  <input type="text" class="mb-4 p-2 border border-info rounded shadow" [(ngModel)]="newAnswer" placeholder="Enter answer text..." />
+  <div class="text-center">
+    <button class="btn btn-primary shadow" (click)="addJoke()">Add joke</button>
+  </div>
+</div>

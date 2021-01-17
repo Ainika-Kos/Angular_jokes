@@ -1,0 +1,11 @@
+<div class="card mb-4 p-2 text-center">
+  <h5 class="card-title">{{ joke.question }}</h5>
+  <h5 *ngIf="showAnswer" class="card-title text-info">
+    {{joke.answer}}
+  </h5>
+  <div class="card-body text-center">
+    <button class="btn badge-info mx-2 shadow" (click)="showAnswer = !showAnswer">Tell me</button>
+    <button class="btn badge-success mx-2 shadow" (click)="removeJoke()">Delete</button>
+  </div>
+  <a class="card-link text-success font-weight-bold" [routerLink]="['/jokes/' + joke.id]">Read more</a>
+</div>
