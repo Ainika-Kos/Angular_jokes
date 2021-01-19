@@ -23,7 +23,7 @@ export class JokesComponent implements OnInit {
 
   addJoke(newJoke: Joke): void {
     this.jokes.push(newJoke);
-    console.log(newJoke);
+    console.log(this.jokes);
   }
 
 }

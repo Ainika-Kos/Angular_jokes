@@ -1,4 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+// import * as uuid from 'uuid';
+// const myId = uuid.v4();
+
 
 @Component({
   selector: 'app-form',
@@ -16,7 +19,7 @@ export class FormComponent {
       return;
     }
     const newJoke = {
-      id: new Date().getTime(),
+      id: Number(Date.now()),
       question: this.newQuestion,
       answer: this.newAnswer,
     };
